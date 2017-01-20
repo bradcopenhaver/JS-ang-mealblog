@@ -7,7 +7,6 @@ import {Meal} from './meal.model';
   <h1>Meal Logger</h1>
   <meal-list [childMealList]="masterMealList" (editMealSender)="editMeal($event)"></meal-list>
   <meal-new (newMealSender)="addNewMeal($event)"></meal-new>
-
   <meal-edit [childCurrentMeal]="clickedMeal" (doneSender)="doneEditing()"></meal-edit>
   `
 })

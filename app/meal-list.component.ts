@@ -15,7 +15,7 @@ import {Meal} from './meal.model';
     <div class="mealListContainer">
       <div class="mealTile{{currentMeal.day}}" *ngFor="let currentMeal of childMealList | calorieLimit:calorieLimit">
         <div class="">
-          <h4>{{currentMeal.dateString}}, {{currentMeal.hours}}:{{currentMeal.minutes}}</h4>
+          <h4>{{currentMeal.dateString}}, {{currentMeal.hours}}:{{currentMeal.minutes | minuteDisplay }}</h4>
         </div>
         <div class="mealTileBody">
           <p>{{currentMeal.foods}}</p>

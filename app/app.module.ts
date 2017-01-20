@@ -6,6 +6,7 @@ import {MealListComponent} from './meal-list.component';
 import {MealNewComponent} from './meal-new.component';
 import {MealEditComponent} from './meal-edit.component';
 import {CalorieLimitPipe} from './calorieLimit.pipe';
+import {MinuteDisplayPipe} from './minuteDisplay.pipe';
 
 @NgModule({
   imports: [BrowserModule,
@@ -14,7 +15,8 @@ import {CalorieLimitPipe} from './calorieLimit.pipe';
                   MealListComponent,
                   MealNewComponent,
                   MealEditComponent,
-                  CalorieLimitPipe],
+                  CalorieLimitPipe,
+                  MinuteDisplayPipe],
   bootstrap:    [ AppComponent ]
 })
 

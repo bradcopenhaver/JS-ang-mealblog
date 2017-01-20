@@ -24,11 +24,13 @@ You will need the following things properly installed on your computer.
 
 ##Known Bugs
 
-None yet due to lack of testing.
+Minutes less than 10 display as only one digit in time stamp.
 
 ## Possible future version features
 
+Persistent database to save log.
 
+Group meals by day.
 
 ## Technologies Used
 

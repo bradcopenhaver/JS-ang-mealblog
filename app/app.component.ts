@@ -13,9 +13,9 @@ import {Meal} from './meal.model';
 
 export class AppComponent {
   masterMealList: Meal[] = [
-    new Meal("Frosted Mini Wheats with 2% milk", 536, "Two bowls of..."),
-    new Meal("Chili cheesey mac", 2400, "The pasta was organic."),
-    new Meal("Rice crackers", 200, "Least satisfying snack ever."),
+    new Meal("Frosted Mini Wheats with 2% milk", 536, "Two bowls of...", "Mon Jan 16 2017", 1),
+    new Meal("Chili cheesey mac", 2400, "The pasta was organic.", "Mon Jan 17 2017", 1),
+    new Meal("Rice crackers", 200, "Least satisfying snack ever.", "Thu Jan 19 2017", 4),
     new Meal("Subway Italian BMT", 740, "I was going to save half for later, but I didn't.")
   ]
 

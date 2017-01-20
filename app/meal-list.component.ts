@@ -13,12 +13,16 @@ import {Meal} from './meal.model';
       <option value=0 selected>No Limit</option>
     </select>
     <div class="mealListContainer">
-      <div class="mealTile" *ngFor="let currentMeal of childMealList | calorieLimit:calorieLimit">
-        <h5>{{currentMeal.date}}, {{currentMeal.hours}}:{{currentMeal.minutes}}</h5>
-        <p>{{currentMeal.foods}}</p>
-        <p>Calories: {{currentMeal.calories}}</p>
-        <p>Notes: {{currentMeal.notes}}</p>
-        <button class="btn" (click)="editThisMeal(currentMeal)">Edit This Meal</button>
+      <div class="mealTile{{currentMeal.day}}" *ngFor="let currentMeal of childMealList | calorieLimit:calorieLimit">
+        <div class="">
+          <h5>{{currentMeal.dateString}}, {{currentMeal.hours}}:{{currentMeal.minutes}}</h5>
+        </div>
+        <div class="mealTileBody">
+          <p>{{currentMeal.foods}}</p>
+          <p>Calories: {{currentMeal.calories}}</p>
+          <p>Notes: {{currentMeal.notes}}</p>
+          <button class="btn" (click)="editThisMeal(currentMeal)">Edit This Meal</button>
+        </div>
       </div>
     </div>
   `

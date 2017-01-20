@@ -5,14 +5,15 @@ import {Meal} from './meal.model';
   selector:'meal-edit',
   template: `
   <div  *ngIf="childCurrentMeal">
-    <div class="inputForm">
-      <h4>Edit Meal from {{childCurrentMeal.timeStamp}}</h4>
+    <div class="inputForm{{childCurrentMeal.day}}">
+      <h4>Edit Meal from {{childCurrentMeal.dateString}}</h4>
       <label>Foods:</label>
       <input [(ngModel)]="childCurrentMeal.foods">
       <label>Calories:</label>
       <input [(ngModel)]="childCurrentMeal.calories">
       <label>Notes:</label>
       <input [(ngModel)]="childCurrentMeal.notes">
+      <br>
       <button class="btn" (click)="done()">Done</button>
     </div>
   </div>

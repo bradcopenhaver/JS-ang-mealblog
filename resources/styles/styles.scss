@@ -3,53 +3,34 @@
   flex-flow: wrap;
 }
 
-.mealTile0, .mealTile1, .mealTile2, .mealTile3, .mealTile4, .mealTile5, .mealTile6,  {
-  background-image: linear-gradient(#b2cfff, white);
+.mealTile0, .mealTile1, .mealTile2, .mealTile3, .mealTile4, .mealTile5, .mealTile6, .inputForm0, .inputForm1, .inputForm2, .inputForm3, .inputForm4, .inputForm5, .inputForm6 {
+  background-image: linear-gradient(#b2cfff, white 60px);
   border: solid 2px black;
   border-radius: 15px;
-  padding: 15px;
+  padding: 0px 15px 15px 15px;
   margin: 5px;
 }
-.mealTile1 {
-  background-image: linear-gradient(#b2fff7, white);
+.mealTile1, .inputForm1 {
+  background-image: linear-gradient(#b2fff7, white 60px);
 }
-.mealTile2 {
-  background-image: linear-gradient(#b2ffb7, white);
+.mealTile2, .inputForm2 {
+  background-image: linear-gradient(#b2ffb7, white 60px);
 }
-.mealTile3 {
-  background-image: linear-gradient(#eeffb2, white);
+.mealTile3, .inputForm3 {
+  background-image: linear-gradient(#eeffb2, white 60px);
 }
-.mealTile4 {
-  background-image: linear-gradient(#ffe9b2, white);
+.mealTile4, .inputForm4 {
+  background-image: linear-gradient(#ffe9b2, white 60px);
 }
-.mealTile5 {
-  background-image: linear-gradient(#ffb2b2, white);
+.mealTile5, .inputForm5 {
+  background-image: linear-gradient(#ffb2b2, white 60px);
 }
-.mealTile6 {
-  background-image: linear-gradient(#ffbce7, white);
+.mealTile6, .inputForm6 {
+  background-image: linear-gradient(#ffbce7, white 60px);
 }
-
-.inputForm0, .inputForm1, .inputForm2, .inputForm3, .inputForm4, .inputForm5, .inputForm6,  {
-  background-color: #b2cfff;
+.newMealInputForm {
+  border: solid 2px black;
   border-radius: 15px;
-  padding: 15px;
+  padding: 0px 15px 15px 15px;
   margin: 5px;
-}
-.inputForm1 {
-  background-color: #b2fff7;
-}
-.inputForm2 {
-  background-color: #b2ffb7;
-}
-.inputForm3 {
-  background-color: #eeffb2;
-}
-.inputForm4 {
-  background-color: #ffe9b2;
-}
-.inputForm5 {
-  background-color: #ffb2b2;
-}
-.inputForm6 {
-  background-color: #ffbce7;
 }

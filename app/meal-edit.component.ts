@@ -7,12 +7,18 @@ import {Meal} from './meal.model';
   <div  *ngIf="childCurrentMeal">
     <div class="inputForm{{childCurrentMeal.day}}">
       <h4>Edit Meal from {{childCurrentMeal.dateString}}</h4>
-      <label>Foods:</label>
-      <input [(ngModel)]="childCurrentMeal.foods">
-      <label>Calories:</label>
-      <input [(ngModel)]="childCurrentMeal.calories">
-      <label>Notes:</label>
-      <input [(ngModel)]="childCurrentMeal.notes">
+      <div class="form-group">
+        <label>Foods:</label>
+        <input class="form-control" [(ngModel)]="childCurrentMeal.foods">
+      </div>
+      <div class="form-group">
+        <label>Calories:</label>
+        <input type="number" class="form-control" [(ngModel)]="childCurrentMeal.calories">
+      </div>
+      <div class="form-group">
+        <label>Notes:</label>
+        <input class="form-control" [(ngModel)]="childCurrentMeal.notes">
+      </div>
       <br>
       <button class="btn" (click)="done()">Done</button>
     </div>

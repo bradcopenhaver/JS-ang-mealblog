@@ -2,7 +2,7 @@
 
 This app allows users to keep track of what they eat, when they eat it, and how many calories they ate.
 
-
+Users can enter text to describe the foods eaten, a number for the total calories consumed, and additional text for details of the meal. Each entry is saved with the date and time that the entry was made. Meals are displayed in the order they were recorded, and meals recorded on the same day of the week will be displayed with the same background color.
 
 ## Prerequisites
 
@@ -31,6 +31,10 @@ Minutes less than 10 display as only one digit in time stamp.
 Persistent database to save log.
 
 Group meals by day.
+
+Additional filters: meal time of day, weekday/weekend.
+
+Sort options.
 
 ## Technologies Used
 

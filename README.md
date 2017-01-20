@@ -2,7 +2,7 @@
 
 This app allows users to keep track of what they eat, when they eat it, and how many calories they ate.
 
-Users can enter text to describe the foods eaten, a number for the total calories consumed, and additional text for details of the meal. Each entry is saved with the date and time that the entry was made. Meals are displayed in the order they were recorded, and meals recorded on the same day of the week will be displayed with the same background color.
+Users can enter text to describe the foods eaten, a number for the total calories consumed, and additional text for details of the meal. Each entry is saved with the date and time that the entry was made. Meals are displayed in the order they were recorded, and meals recorded on the same day of the week will be displayed with the same background color. Drop-down options allow users to filter meals by a max number of calories. Meals with more than 2000 calories will have their calories displayed in bold red text.
 
 ## Prerequisites
 

@@ -19,7 +19,7 @@ import {Meal} from './meal.model';
         </div>
         <div class="mealTileBody">
           <p>{{currentMeal.foods}}</p>
-          <p>Calories: {{currentMeal.calories}}</p>
+          <p [class]="calorieWarning(currentMeal)">Calories: {{currentMeal.calories}}</p>
           <p>Notes: {{currentMeal.notes}}</p>
           <button class="btn" (click)="editThisMeal(currentMeal)">Edit This Meal</button>
         </div>
@@ -39,5 +39,10 @@ export class MealListComponent {
   }
   updateCalorieLimit(upperLimit: number) {
     this.calorieLimit = upperLimit;
+  }
+  calorieWarning(meal) {
+    if (meal.calories >= 2000){
+      return "largeMeal";
+    }
   }
 }

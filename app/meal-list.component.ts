@@ -5,7 +5,14 @@ import {Meal} from './meal.model';
   selector: 'meal-list',
   template:`
     <h2>Recorded Meals:</h2>
-    <div class="mealTile" *ngFor="let currentMeal of childMealList">
+    <h4>Filter by:</h4>
+    <label>Max calories:</label>
+    <select (change)="updateCalorieLimit($event.target.value)">
+      <option value=500>500</option>
+      <option value=2000>2000</option>
+      <option value=null selected>No Limit</option>
+    </select>
+    <div class="mealTile" *ngFor="let currentMeal of childMealList | calorie-limit:calorieLimit">
       <h5>{{currentMeal.timeStamp}}</h5>
       <p>{{currentMeal.foods}}</p>
       <p>Calories: {{currentMeal.calories}}</p>
@@ -19,7 +26,12 @@ export class MealListComponent {
   @Input() childMealList: Meal[];
   @Output() editMealSender = new EventEmitter;
 
+  calorieLimit: number = 500;
+
   editThisMeal(clickedMeal){
     this.editMealSender.emit(clickedMeal);
+  }
+  updateCalorieLimit(upperLimit: number) {
+    this.calorieLimit = upperLimit;
   }
 }

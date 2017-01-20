@@ -5,7 +5,7 @@ import {Meal} from './meal.model';
   selector: 'meal-list',
   template:`
     <h2>Recorded Meals:</h2>
-    <div *ngFor="let currentMeal of childMealList">
+    <div class="mealTile" *ngFor="let currentMeal of childMealList">
       <h5>{{currentMeal.timeStamp}}</h5>
       <p>{{currentMeal.foods}}</p>
       <p>Calories: {{currentMeal.calories}}</p>
@@ -16,5 +16,5 @@ import {Meal} from './meal.model';
 
 export class MealListComponent {
   @Input() childMealList: Meal[];
-  
+
 }
